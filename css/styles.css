@@ -10,6 +10,12 @@ body {
     padding-left: 70px;
   }
 }
+@media screen and (min-width: 1440px) {
+  body {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+}
 
 .gallery {
   display: grid;
