@@ -1,0 +1,43 @@
+body{
+    padding: 25px;
+    font-size: 14px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    @media screen and (min-width: 1024px){
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 25px;
+   img{
+       width: 100%;
+       height: auto;
+    }
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    @media screen and (min-width: 1024px){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+input{
+    width: 100%;
+    padding: 10px; 
+    display: block;
+    margin-right: auto;
+    margin-left:auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    @media screen and (min-width: 768px){
+        width: 55%;
+        padding:15px;
+    }
+}
